@@ -30,3 +30,29 @@ const myFunction = function(){
 }
 
 console.log(typeof myFunction);
+
+// ##############################################################################################
+
+/* we have 2 types of memory 
+1."Stack" which is used in "Primitive" data type and
+2. "Heap" is used in "Non Primitive" */
+
+// stack example
+
+let myChannel="VD"
+let anotherChannel= myChannel
+anotherChannel="ChaiwithVaibhav"
+
+console.log(myChannel);
+console.log(anotherChannel);
+
+// heap example
+let userOne={
+    email: "user1@google.com",
+    upi: "user1@hdfc"
+}
+ let userSecond = userOne
+
+ userSecond.email = "vaibhav@gmail.com"
+ console.log(userOne.email);
+ console.log(userSecond.email);
